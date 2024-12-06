@@ -1,2 +1,9 @@
-<h1>Kittens#edit</h1>
-<p>Find me in app/views/kittens/edit.html.erb</p>
+<div class="container mx-auto p-4">
+  <h1 class="text-3xl font-bold mb-6">Edit Kitten: <%= @kitten.name %></h1>
+
+  <%= render 'form', 
+      kitten: @kitten, 
+      submit_text: 'Update Kitten', 
+      cancel_path: kitten_path(@kitten) 
+  %>
+</div>
