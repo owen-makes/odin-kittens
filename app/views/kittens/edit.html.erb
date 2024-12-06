@@ -6,4 +6,7 @@
       submit_text: 'Update Kitten', 
       cancel_path: kitten_path(@kitten) 
   %>
+  <div class="mt-6 flex space-x-4">
+    <%= button_to 'Delete', kitten_path(@kitten), method: :delete, data: { confirm: 'Are you sure you want to delete this kitten?' }, class: 'btn btn-danger' %>
+  </div>
 </div>
